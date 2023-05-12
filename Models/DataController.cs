@@ -40,23 +40,22 @@ namespace API2
             return CreatedAtAction(nameof(GetDataObject), new { id = dataObject.Id }, dataObject);
         }
 
-        [HttpPost("application/xml")]
-        public IActionResult AddDataObjectXml([FromBody] DataObject dataObject)
+    [HttpPost("application/xml")]
+    public IActionResult AddDataObjectXml([FromBody] DataObject dataObject)
+    {
+        if (data.Any(d => d.Id == dataObject.Id))
         {
-            if (data.Any(d => d.Id == dataObject.Id))
-            {
-                return Conflict();
-            }
-
-            data.Add(dataObject);
-
-            return CreatedAtAction(nameof(GetDataObject), new { id = dataObject.Id }, dataObject);
+            return Conflict();
         }
 
+        data.Add(dataObject);
+
+        return CreatedAtAction(nameof(GetDataObject), new { id = dataObject.Id }, dataObject);
+    }
 
 
 
-        [HttpPut("{id}")]
+    [HttpPut("{id}")]
         public IActionResult UpdateDataObject(int id, [FromBody] DataObject dataObject)
         {
             var existingDataObject = data.FirstOrDefault(d => d.Id == id);

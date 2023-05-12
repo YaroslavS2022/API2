@@ -35,3 +35,7 @@ C:\Users\PC\source\repos\API2\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\PC\source\repos\API2\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\PC\source\repos\API2\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\PC\source\repos\API2\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\PC\source\repos\API2\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\PC\source\repos\API2\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\PC\source\repos\API2\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\PC\source\repos\API2\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
